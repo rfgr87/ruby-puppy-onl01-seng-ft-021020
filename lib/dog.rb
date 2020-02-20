@@ -3,11 +3,11 @@
 class Dog 
   attr_accessor :name
   @@all = []
-  @namearray = Array.new(0)
+  @@name = []
   
   def initialize(name)
     @name = name
-    @namearray << name
+    @@name << name
     save
   end
   
@@ -16,7 +16,7 @@ class Dog
   end
   
   def self.print_all
-    @namearray.each do |x|
+    @namearray.uniq.each do |x|
       puts x
     end
   end
