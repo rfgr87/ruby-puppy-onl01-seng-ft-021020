@@ -3,7 +3,7 @@
 class Dog 
   attr_accessor :name
   @@all = []
-  @namearray = []
+  @namearray = Array.new(0)
   
   def initialize(name)
     @name = name
