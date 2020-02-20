@@ -16,7 +16,7 @@ class Dog
   end
   
   def self.print_all
-    @namearray.uniq.each do |x|
+    @@name.uniq.each do |x|
       puts x
     end
   end
